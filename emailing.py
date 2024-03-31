@@ -4,7 +4,7 @@ import imghdr
 
 
 def sending_email(image_with_object):
-    password = "rcjqsbclbtkymqqm"
+    password = "EMAIL_PASSWORD"
     sender = "lovelakhwani181@gmail.com"
     email_message = EmailMessage()
     email_message["Subject"] = "INTRUDER DETECTED"
@@ -18,3 +18,4 @@ def sending_email(image_with_object):
     gmail.login(sender, password)
     gmail.sendmail(sender, sender, email_message.as_string())
     gmail.quit()
+
