@@ -4,8 +4,8 @@ import imghdr
 
 
 def sending_email(image_with_object):
-    password = "EMAIL_PASSWORD"
-    sender = "lovelakhwani181@gmail.com"
+    password = "dano ikcb pzls mcth"
+    sender = "cs50.project.mail@gmail.com"
     email_message = EmailMessage()
     email_message["Subject"] = "INTRUDER DETECTED"
     email_message.set_content("We have detected the an Object Entering your Area")

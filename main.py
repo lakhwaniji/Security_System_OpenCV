@@ -46,11 +46,12 @@ while True:
         email_thread = Thread(target=sending_email, args=(f"photos/image{int(c/2)}.png",))
         email_thread.daemon=True
         email_thread.start()
-        clear_thread = Thread(target=clear_folder)
+
 
     cv2.imshow("My Video",frame)
     key=cv2.waitKey(1)
     if key==ord("q"):
         break
 video.release()
-clear_thread.start()
+#clear_thread = Thread(target=clear_folder)
+#clear_thread.start()
